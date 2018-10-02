@@ -4,12 +4,11 @@ pipeline {
     agent any
     stages {
         stage("build") {
-        steps {
-		    sh 'cd basic_webserver'
-            sh 'make all'
-        }    
-    }
-
+            steps {
+ 	         sh 'cd basic_webserver'
+                 sh 'make all'
+            }    
+        }
     }
 }
 
