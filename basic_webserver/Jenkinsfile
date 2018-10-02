@@ -4,7 +4,8 @@ pipeline {
     agent any
     stages {
         stage("build") {
-        steps {    
+        steps {
+		cd basic_webserver    
 	        make all 
         }    
     }
