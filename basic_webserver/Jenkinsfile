@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage("build") {
         steps {
-		cd basic_webserver    
-	        make all 
+		    sh 'cd basic_webserver'
+            sh 'make all'
         }    
     }
 
